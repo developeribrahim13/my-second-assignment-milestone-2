@@ -36,14 +36,13 @@ header{
     width: 100%;
     margin: 0 auto;
     background-color: #1A0B2E;
-    border: 1px solid #412567;
 }
 
 header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 16px 200px;
+    padding: 16px 200px;
 }
 
 header nav h1{
@@ -72,6 +71,96 @@ header nav .menu{
 }
 /* nav section end */
 
+/* banner section start */
+
+/* header #banner .bnr */
+
+header #banner{
+    max-width: 1600px;
+    width: 100%;
+    height: 760px;
+    background-image: url(../images/hero-bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    padding-top: 10px;
+    border: 1px solid #412567;
+}
+
+header #banner .bnr-content .crcl{
+    background-image: url(../images/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px; 
+    height: 350px;
+    margin: 101px auto 0;
+    /* background-size: 100% 100%; */
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header #banner .bnr-content{
+    text-align: center;
+}
+
+header #banner .bnr-content .crcl .new{
+    background-color: #00FF88;
+    border-radius: 1000px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    color: #1A0B2E;
+    width: 75px;
+    position: absolute;
+    top:1px;
+    right: 50px;
+}
+
+header #banner .bnr-content h1{
+    margin: 40px 0 8px;
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+}
+
+header #banner .bnr-content p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.801);
+    margin-bottom: 24px;
+}
+
+header #banner .bnr-content .button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+header #banner .bnr-content .button-div .btn1{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+header #banner .bnr-content .button-div .btn2{
+    font-size: 16px;
+    padding: 12px 18px;
+    border-radius: 10000px;
+    border-color: #00FF88;
+    color: #00FF88;
+    background-color: transparent;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* banner section end */
+
 
 
 
@@ -91,7 +180,7 @@ header nav .menu{
     
     /* nav section start  */
     header nav{
-        margin: 20px;
+        padding: 20px;
     }
 
     header nav h1{
@@ -106,4 +195,43 @@ header nav .menu{
         display: block;
     }
     /* nav section end */
+
+    /* banner section start*/
+    header #banner{
+        width: 100%;
+        height: 20%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        /* padding-bottom: 50px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header #banner .bnr-content{
+        width: 90%;
+        border: #F7E93F 2px solid;
+        /* margin: 0 auto; */
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0px;    }
+
+    header #banner .bnr-content .crcl{
+        background-size: 45%;
+        border: #00FF88 2px solid;
+        margin: 125px auto 0;
+    }
+
+    header #banner .bnr-content .crcl img{
+        width: 16%;
+    }
+
+    header #banner .bnr-content h1{
+        font-size: 32px;
+        /* margin: 30x 15px 10px; */
+    }
+    /* banner section end */
 }
