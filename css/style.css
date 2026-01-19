@@ -77,7 +77,7 @@ header nav .menu{
 
 header #banner{
     max-width: 1600px;
-    width: 100%;
+    /* width: 100%; */
     height: 760px;
     background-image: url(../images/hero-bg.png);
     background-position: center;
@@ -157,8 +157,6 @@ header #banner .bnr-content .button-div .btn2{
     align-items: center;
     gap: 5px;
 }
-
-
 /* banner section end */
 
 
@@ -177,7 +175,12 @@ header #banner .bnr-content .button-div .btn2{
 /* responsive design for mobile(small device) */
 @media screen and (max-width:576px) {
     /* header seciton start */
-    
+    header{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 576px;
+    }
+
     /* nav section start  */
     header nav{
         padding: 20px;
@@ -199,39 +202,64 @@ header #banner .bnr-content .button-div .btn2{
     /* banner section start*/
     header #banner{
         width: 100%;
-        height: 20%;
-        background-size: 100%;
+        /* max-width: 576px; */
+        height: auto;
+        background-size: cover;
         background-repeat: no-repeat;
-        /* padding-bottom: 50px; */
+        padding-bottom: 40px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     header #banner .bnr-content{
-        width: 90%;
-        border: #F7E93F 2px solid;
+        width: 100%;
+        /* border: #F7E93F 2px solid; */
         /* margin: 0 auto; */
-        padding: 0 30px;
+        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap:0px;    }
+        /* gap:0px; */
+    }
 
     header #banner .bnr-content .crcl{
-        background-size: 45%;
-        border: #00FF88 2px solid;
-        margin: 125px auto 0;
+        background-size: contain;
+        width: 180px;
+        height: 180px;
+        margin: 60px auto 0;
+        /* border: #00FF88 1px solid; */
     }
 
     header #banner .bnr-content .crcl img{
-        width: 16%;
+        width: 29%;
     }
 
     header #banner .bnr-content h1{
         font-size: 32px;
+        margin: 24px 0 12px;
         /* margin: 30x 15px 10px; */
     }
-    /* banner section end */
+
+    header #banner .bnr-content p{
+        font-size: 14px;
+        margin-bottom: 30px;
+        max-width: 320px;
+    }
+
+    header #banner .bnr-content .crcl .new{
+        width: 50px;
+        padding: 4px 8px;
+        font-size: 12px;
+        right: 10px;
+        top: 10px;
+    }
+
+    header #banner .bnr-content .button-div .btn1,
+    header #banner .bnr-content .button-div .btn2{
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+    /* banner section end 😢bohut kosto😥hoye geche.. hudai.. maje maje kaj korena..😫*/
 }
