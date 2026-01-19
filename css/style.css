@@ -538,6 +538,8 @@ main #featured .episode .card .episode-txt h5{
     /* episode section start */
     main #featured{
         padding: 35px 2px;
+        max-width: 576px;
+        width: 100%;
     }
 
     main #featured h1{
@@ -546,11 +548,22 @@ main #featured .episode .card .episode-txt h5{
     }
 
     main #featured .episode{
-        grid-template-columns: 30%;
+        /* width: 100%; */
+        grid-template-columns: 300px;
         grid-template-rows: auto;
         justify-items: center;
         gap:16px;
+        /* border: 1px yellow solid; */
     }
+
+    /* main #featured .episode .card{
+        width: 70%;
+        border: 1px red solid;
+    }
+
+    main #featured .episode .card iframe{
+        width: 300px;
+    } */
 
     main #featured .episode .card .episode-txt{
     padding: 16px;
