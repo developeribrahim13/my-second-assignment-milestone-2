@@ -27,6 +27,12 @@
     border-style: none;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(245deg,#F7E93F,#FB09B4,#9100F8);  
+    font-size: large;
 }
 
 /* common class */
@@ -156,7 +162,9 @@ header #banner .bnr-content .button-div .btn2{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 }
+
 /* banner section end */
 /* header section end */
 
@@ -346,8 +354,72 @@ main #featured .episode .card .episode-txt h5{
     line-height: 24px;
     font-weight: 600;
 }
-
 /* featured section end */
+
+/* host section start */
+main #host{
+    padding: 0 200px 120px;
+    background-color: #1A0B2E;
+}
+
+main #host .host-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+main #host .host-content h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+main #host .host-content .alex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    padding: 40px;
+    background-color: #35116554;
+    border-radius: 40px;
+}
+
+main #host .host-content .alex .alex-data{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main #host .host-content .alex .alex-data h3{
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+main #host .host-content .alex .alex-data p{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+main #host .host-content .alex .alex-data .alex-links{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+main #host .host-content .alex .alex-data .alex-links a{
+    padding: 9px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/* host section end */
 
 
 /* main section end */
@@ -543,12 +615,11 @@ main #featured .episode .card .episode-txt h5{
     }
 
     main #featured h1{
-        font-size: 32px;
-        margin-bottom: 24px;
+        font-size: 25px;
+        margin-bottom: 18px;
     }
 
     main #featured .episode{
-        /* width: 100%; */
         grid-template-columns: 300px;
         grid-template-rows: auto;
         justify-items: center;
@@ -556,14 +627,9 @@ main #featured .episode .card .episode-txt h5{
         /* border: 1px yellow solid; */
     }
 
-    /* main #featured .episode .card{
-        width: 70%;
-        border: 1px red solid;
-    }
-
     main #featured .episode .card iframe{
-        width: 300px;
-    } */
+        height: 170px;
+    }
 
     main #featured .episode .card .episode-txt{
     padding: 16px;
@@ -571,12 +637,52 @@ main #featured .episode .card .episode-txt h5{
 
     main #featured .episode .card .episode-txt h3{
         margin-bottom: 8px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     main #featured .episode .card .episode-txt p{
         margin-bottom: 8px;
+        font-size: 12px;
     }
-        
+
+    main #featured .episode .card .episode-txt h5{
+        font-size: small;
+    }
     /* episode section end */
+
+    /* host section start */
+
+    main #host{
+        padding: 0 20px 40px;
+    }
+
+    main #host .host-content{
+        gap:24px;
+    }
+
+    main #host .host-content h1{
+        font-size: 32px;
+        margin-top: 30px;
+    }
+
+    main #host .host-content .alex{
+        gap: 16px;
+        padding: 24px;
+    }
+
+    main #host .host-content .alex{
+        flex-direction: column;
+    }
+
+    main #host .host-content .alex .alex-data{
+        align-items: center;
+        gap: 16px;
+    }
+
+    main #host .host-content .alex .alex-data p{
+        text-align: center;
+    }
+
+    /* host section end */
+
 }
