@@ -121,6 +121,24 @@ header #banner .bnr-content .crcl .new{
     position: absolute;
     top:1px;
     right: 50px;
+    animation: badge 2s infinite;
+}
+
+@keyframes badge{
+    0%{
+    transform: scale(1);
+    box-shadow: 0 0 0 0 #00ff8810;
+    }
+
+    50%{
+        transform: scale(1.15);
+        box-shadow: 0 0 8px 8px #00ff8827;
+    }
+
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #00ff8800;
+    }
 }
 
 header #banner .bnr-content h1{
@@ -421,7 +439,6 @@ main #host .host-content .alex .alex-data .alex-links a{
     text-decoration: none;
 }
 /* host section end */
-
 /* main section end */
 
 /* footer section start */
@@ -479,7 +496,6 @@ footer #footer-content p{
     font-size: 16px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.575);
-
 }
 /* footer section end */
 
@@ -589,10 +605,6 @@ footer #footer-content p{
     /* banner section end 😢bohut kosto😥hoye geche.. hudai.. maje maje kaj korena..😫*/
 
     /* about section start */
-    /* main{
-    max-width: 576px;
-    width: 100%;
-    } */
 
     main #about{
     padding: 25px 0px 60px;
@@ -744,18 +756,19 @@ footer #footer-content p{
 
     /* footer section start */
     footer{
-        /* max-width: 576px;
-        width: 100%; */
-        height: 248px;
+         /* max-width: 576px;  */
+        /* width: 100%;  */
+        height: auto;
+        padding: 20px 0;
         /* background-size: cover; */
-        /* background-repeat: no-repeat;  */
+        background-repeat: no-repeat; 
         /* background-size: 100% 100%; */
     }
 
     footer #footer-content{
         /* width: 70%; */
-        gap: 24px;
-        padding-bottom: 3px;
+        gap: 20px;
+        padding-bottom: 0;
     }
 
     footer #footer-content h1{
@@ -775,5 +788,4 @@ footer #footer-content p{
         font-size: 14px;
     }
     /* footer section end */
-
 }
